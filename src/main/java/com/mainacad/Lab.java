@@ -58,6 +58,7 @@ public class Lab
 
         //TODO: Выбрать несколько вариантов из списка Selenium Commands
         Select seleniumCommands = new Select(driver.findElement(By.name("selenium_commands")));
+        seleniumCommands.selectByIndex(0);
         seleniumCommands.selectByVisibleText("WebElement Commands");
 
         //TODO: Кликнуть на кнопку Button
